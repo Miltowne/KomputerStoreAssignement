@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style src="style.css"></style>
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="jumbotron" style="background-color:black; color: white">
+        <h1>Komputer Store</h1>
+    </header>
+
+
+    <div class="container">
+        <div class="row">
+            
+            <div class="divleft col">
+                <p id="dept" class="test">Total dept: 0</p>
+                <button id="getLoanbtn"type="submit" class="btn btn-success" >Get Loan</button>
+                <button id="repayLoanbtn" class="btn btn-primary" hidden>Repay Loan</button>
+            </div>
+            <div class="col">
+                <p id="balance" >Your Balance: 0</p>
+                <p id="pay">Total Salary: 0</p>
+                <button id="salarybtn" class="btn btn-warning">Bank</button>
+                <button id="workbtn" class="btn btn-primary">Work</button>
+            </div>
+            <div class="col">
+                
+                <!-- Laptops Area -->
+                <!--laptop selection area-->
+                <h3>Laptops</h3>
+                    <select name="laptopSelectionArea" id="laptopSelectionArea" class="dropdown-toggle"></select>
+                    <!---info section-->
+                    <ul id="features" class="list-group" >Features</ul>
+                    <!--display image, nameand description-->
+            </div>
+                    <div class="w-100">
+                        <div class="row">
+                            <div class="col-md-4">
+
+                                <div class="thumbnail">
+                                    <img id="image" alt="laptop" width="250px">
+    
+                                    <div class="line caption">
+                                        <h2 id="titleComputer"></h2>
+                                        <p id="breadComputer"></p>
+                                        <button id="buyNow" class="btn btn-info">Buy Now</button>  
+        
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>    
+        </div>
+    </div>   
+        <div id="headliner"></div>
+        <script src="app.js"></script>
+</body>
+</html>
